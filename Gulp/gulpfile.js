@@ -4,7 +4,7 @@
 ------------------------------
   ** At first need to install Node.js
   $ node -v [Check node version]
-  $ npm -v [Check npn version]
+  $ npm -v [Check npm version]
   $ npm install -g gulp [Install gulp globally]
   $ npm install gulp --save-dev [Install gulp in project]
   $ npm install gulp-uglify --save-dev [Install uglify gulp package]
