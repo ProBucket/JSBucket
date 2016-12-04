@@ -1,4 +1,16 @@
-// npm install gulp-clean-css --save-dev
+/* 
+------------------------------
+ # Gulp Installation
+------------------------------
+  CMD: node -v (Check node version)
+  CMD: npm -v (Check npn version)
+  CMD: npm install -g gulp (Install gulp globally)
+  CMD: npm install gulp --save-dev (Install gulp in project)
+  CMD: npm install gulp-uglify --save-dev
+  CMD: npm install gulp-concat --save-dev
+  CMD: npm install gulp-clean-css --save-dev
+  CMD: npm install gulp-install --save-dev
+*/
 
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
