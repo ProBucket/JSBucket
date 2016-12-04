@@ -1,0 +1,10 @@
+{
+  "name": "gradpak-gulp",
+  "version": "1.0.0",
+  "author": "Ahmed",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+  }
+}
