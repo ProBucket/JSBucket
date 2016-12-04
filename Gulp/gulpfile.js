@@ -25,20 +25,14 @@ gulp.task('install', function(){
 });
 
 gulp.task('scripts', function() {
-    gulp.src([
-			'js/scripts/vendors/jquery.min.js',
-			'js/lib/jquery-ui.js'
-		])
+    gulp.src( [ 'js/scripts/vendors/jquery.min.js', 'js/lib/jquery-ui.js' ] )
         .pipe(concat('gradpak-admin-scripts.js'))
         .pipe(uglify())
         .pipe(gulp.dest('build'))
 });
 
 gulp.task('styles', function() {
-	gulp.src([
-			'css/fonts/ionicons/css/ionicons.min.css',
-			'css/lib/font-awesome.min.css'
-		])
+	gulp.src( [ 'css/fonts/ionicons/css/ionicons.min.css', 'css/lib/font-awesome.min.css' ])
 		.pipe(concat('gradpak-admin-styles.css'))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('build'))
