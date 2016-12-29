@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     $('body').delegate('#special_waste_contact_form_submit','click', function(e){
         e.preventDefault();
-        var is_valid = validateSpecialWasteContactForm();
+        var is_valid = validateContactForm();
 
         if(is_valid == true){
             var action_url = '/booking/special_waste_contact';
@@ -74,8 +74,8 @@ $(document).ready(function(){
 
 });
 
-function validateSpecialWasteContactForm(){
-    var details_form = $("#special_waste_contact_form");
+function validateContactForm(){
+    var details_form = $("#contact_form");
 
     details_form.validate({
         rules: {
@@ -121,7 +121,7 @@ function validateStepForm(step_counter){
 
     var form_valid = true;
 
-    // Step1: Delivery Location validation
+    // Step1:
     if(step_counter == 1){
 
         var suburb_name = $('#suburb_autocomplate').val();
@@ -131,7 +131,7 @@ function validateStepForm(step_counter){
             form_valid = false;
         }
 
-    // Step2: Bin Type validation
+    // Step2:
     } else if(step_counter == 2){
 
         var product_id = $('#product_id').val();
@@ -141,7 +141,7 @@ function validateStepForm(step_counter){
             form_valid = false;
         }
 
-    // Step3: Type of Waste validation
+    // Step3:
     } else if (step_counter == 3){
 
         var waste_type_val = parseInt($('input[name=waste_id]:checked').val());
@@ -156,7 +156,7 @@ function validateStepForm(step_counter){
             }
         }
 
-    // Step4: Placing validation
+    // Step4
     } else if (step_counter == 4){
 
         if($('input[name=place_id]:checked').length <= 0) {
@@ -165,7 +165,7 @@ function validateStepForm(step_counter){
             form_valid = false;
         }
 
-    // Step5: Duration validation
+    // Step5
     } else if(step_counter == 5){
 
         var delivery_date = $('#delivery_date').val();
