@@ -1,2 +1,16 @@
 
-# https://bgrins.github.io/spectrum/
+------------------------------------
+ # Slider
+------------------------------------
+  
+    * http://bxslider.com/
+
+    * http://www.jssor.com/
+
+    * https://owlcarousel2.github.io/OwlCarousel2/index.html
+
+------------------------------------
+ # Colorpicker
+------------------------------------
+
+  * https://bgrins.github.io/spectrum/
